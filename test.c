@@ -6,7 +6,7 @@
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 13:18:10 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/09/09 13:52:36 by kpastuhox        ###   ########.fr       */
+/*   Updated: 2019/09/10 15:33:02 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -989,11 +989,19 @@ int main(void)
 ** =================================================
 */
 	int itoa1 = 123;
+	int itoa2 = 32131123;
+	int itoa3 = -565;
 	ft_putstr(" ┌─────────────────────────────────────────┐ \n");
 	ft_putstr(" │            ft_itoa test                 │ \n");
 	ft_putstr(" └─────────────────────────────────────────┘ \n");
 	ft_putstr("\n      ");
 	ft_putstr(ft_itoa(itoa1));
+	ft_putstr(" - returned by ft_itoa");
+	ft_putstr("\n      ");
+	ft_putstr(ft_itoa(itoa2));
+	ft_putstr(" - returned by ft_itoa");
+	ft_putstr("\n      ");
+	ft_putstr(ft_itoa(itoa3));
 	ft_putstr(" - returned by ft_itoa");
 	ft_putstr("\n");
 
