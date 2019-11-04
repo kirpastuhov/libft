@@ -6,13 +6,13 @@
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/07 14:03:23 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/08/07 16:56:10 by kpastuhox        ###   ########.fr       */
+/*   Updated: 2019/11/03 21:12:47 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int		ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
 	int i;
 

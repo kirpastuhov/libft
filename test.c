@@ -6,7 +6,7 @@
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 13:18:10 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/09/10 15:33:02 by kpastuhox        ###   ########.fr       */
+/*   Updated: 2019/11/03 21:06:35 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -658,6 +658,18 @@ int main(void)
 	ft_putstr(memmove8);
 	ft_putstr(" - returned by memmove\n");
 
+	ft_putstr("\n      ");
+	char memmove9[20] = "TESTSTRING";
+	char memmove10[20] = "ab";
+	ft_memmove(memmove10, memmove9,  4 * sizeof(char));
+	ft_putstr(memmove10);
+	ft_putstr(" - returned by ft_memmove");
+	ft_putstr("\n      ");
+	char memmove11[20] = "TESTSTRING";
+	char memmove12[20] = "ab";
+	memmove(memmove12, memmove11, 4 * sizeof(char));
+	ft_putstr(memmove12);
+	ft_putstr(" - returned by memmove\n");
 /*
 ** =================================================
 */
@@ -1008,5 +1020,24 @@ int main(void)
 /*
 ** =================================================
 */
+	t_list *lststart;
+	ft_putstr(" ┌─────────────────────────────────────────┐ \n");
+	ft_putstr(" │            ft_lstnew test               │ \n");
+	ft_putstr(" └─────────────────────────────────────────┘ \n");
+	ft_putstr("\n      ");
+	char *lstnew1 = "LIST NEW\n";
+	lststart = ft_lstnew(lstnew1, sizeof(lstnew1));
+	ft_lstappend(&lststart, ft_lstnew("toto\n", sizeof("toto\n")));
+	ft_lstappend(&lststart, ft_lstnew("tata\n", sizeof("tata\n")));
+	ft_lstprint(lststart);
+	ft_putstr("\n");
+
+/*
+** =================================================
+*/
+
+
+
+
 	return (0);
 }

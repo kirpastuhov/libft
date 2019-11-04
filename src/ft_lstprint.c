@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_lstprint.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/31 17:41:49 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/11/03 21:10:41 by kpastuhox        ###   ########.fr       */
+/*   Created: 2019/09/10 18:02:15 by kpastuhox         #+#    #+#             */
+/*   Updated: 2019/11/03 20:57:27 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void 	ft_putendl(char const *s)
+void	ft_lstprint(t_list *list)
 {
-	ft_putstr(s);
-	ft_putstr("\n");
+	while (list)
+	{
+		ft_putstr(list->content);
+		ft_putstr(" ──> ");
+		list = list->next;
+	}
+	ft_putstr("NULL");
 }

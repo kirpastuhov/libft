@@ -6,11 +6,11 @@
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 19:00:04 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/08/05 19:10:32 by kpastuhox        ###   ########.fr       */
+/*   Updated: 2019/11/03 21:12:06 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	int i;
 	int j;

@@ -6,13 +6,13 @@
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/27 15:32:54 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/08/31 17:50:50 by kpastuhox        ###   ########.fr       */
+/*   Updated: 2019/11/03 21:11:26 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	ft_putnbr_fd(long nb, int fd)
+void	ft_putnbr_fd(int nb, int fd)
 {
 	if (nb == -2147483648)
 	{

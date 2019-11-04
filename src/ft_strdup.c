@@ -6,13 +6,13 @@
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 14:45:16 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/08/05 14:45:55 by kpastuhox        ###   ########.fr       */
+/*   Updated: 2019/11/03 21:13:16 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		len;
 	char	*dest;

@@ -6,13 +6,13 @@
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 15:13:26 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/09/06 18:19:56 by kpastuhox        ###   ########.fr       */
+/*   Updated: 2019/11/03 21:22:30 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*ft_strncpy(char *dest, char const *src, unsigned int n)
+char	*ft_strncpy(char *dest, char const *src, size_t n)
 {
 	char			*real_dest;
 	unsigned int	counter;

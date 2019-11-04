@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kpastuhox <kirillpastuhow@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/31 17:41:49 by kpastuhox         #+#    #+#             */
-/*   Updated: 2019/11/03 21:10:41 by kpastuhox        ###   ########.fr       */
+/*   Created: 2019/11/03 20:59:46 by kpastuhox         #+#    #+#             */
+/*   Updated: 2019/11/03 21:00:08 by kpastuhox        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void 	ft_putendl(char const *s)
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	ft_putstr(s);
-	ft_putstr("\n");
+	del((*alst)->content, (*alst)->content_size);
+	free(*alst);
+	*alst = NULL;
 }
